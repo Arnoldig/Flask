@@ -1,0 +1,137 @@
+/*Основной блок сайта*/
+	body {
+		background: #4c281e; 
+		font-size: 14px; 
+		font-family: Arial;
+	}
+
+/*Шапка сайта*/
+	.block_1 {
+		width: 919px; 
+		min-height: 900px; 
+		margin: 0 auto; 
+		padding: 20px; 
+		background: white;
+	}
+
+	.container {
+		text-align: left;
+	}
+
+	.contacts {
+		float: right;
+	}
+
+/*Верхнее меню сайта*/
+	.top_menu {
+		width: 100%; 
+	}
+
+	.nav_1 {
+		width: 100%; 
+		height: 64px; 
+		background: #482a21 url(line_1.png) repeat-x;
+	}
+
+	.nav_1 ul li {
+		float: left; 
+		background: url(line_2.png) no-repeat right center;
+		padding: 0 2px 0 0;
+	}
+
+	.nav_1 ul li a {
+		display: block; 
+		height: 40px; 
+		padding: 24px 25px 0 25px; 
+		text-decoration: none; 
+		text-transform: uppercase;
+	}
+
+	.nav_1 ul li a:hover {
+		color: #fff; 
+		background: #ff9c00;
+	}
+
+	.nav_2 {
+		width: 98%; 
+		height: 8px; 
+		background: #ff9c00; 
+		margin: 0 auto;
+	}
+
+/*Левое меню сайта*/
+	.nav_left {
+		width: 219px;
+		float: left;
+	    background: #ff9c00;
+	    margin: 20px 0px 0px 0px;
+	}
+
+	.nav_left_1 {
+		width: 100%;
+		background: #482a21;
+	    margin: 8px 0px -8px 8px;
+	}
+
+	.nav_left_1 ul {
+		padding: 10px 0 0 0; 
+	}
+
+	.nav_left_1 ul li {
+		background:url(points.png) no-repeat bottom left;
+	}
+
+	.nav_left_1 ul li a {
+		display: block; 
+		color: #fff; 
+		text-decoration: none; 
+		padding: 10px 6px 10px 40px; 
+		background: url(cup.png) no-repeat 10px 8px;
+	}
+
+	.nav_left_1 ul li a:hover {
+		background: #ff9c00 url(cup.png) no-repeat 10px 8px;
+	}
+
+	.active {
+		background: #ff9c00 url(cup.png) no-repeat 10px 8px !important;
+	}
+
+	.nav_left_1 ul li:nth-last-child(1) {
+		padding: 0px 0px 8px 0px; 
+		background: none;
+	}
+
+/*Оформление страницы со статьёй*/
+	.article {
+	    width: 675px;
+	    min-height: 655px;
+	    float: right;
+	    margin: 20px 0px 0px 0px;
+	    color: #472a20; 
+	}
+
+	.article h1 {
+		text-transform: uppercase; 
+		color: #4c281e; 
+		font-weight: normal; 
+		font-size:revert;
+	}
+
+	.article p {
+		margin: 13.5px 0px;
+		text-align:justify;
+		line-height: 111%;
+	}
+
+	ul.imgs li {
+		display: inline; 
+	}
+
+	ul.imgs li:nth-child(even) {
+		padding: 0px 33px; 
+	}
+
+
+
+
