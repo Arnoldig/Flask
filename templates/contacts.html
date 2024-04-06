@@ -1,54 +1,5 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-</head>
-<body>
-<!-- Основой блок сайта, все детали находятся внутри него -->
-<div class="block_1">
-    <!-- Шапка сайта -->
-    <div class="container">
-        <a class="site_logo" href="/"><img src="../static/img/logo.png"
-                                           alt="Кофейня"></a>
-        <img class="contacts" src="../static/img/phone.png" alt="+7 (3435) 25-60-60">
-    </div>
-    <!-- Верхнее меню сайта -->
-    <div class="top_menu">
-        <!-- Меню с кнопками и ссылками на разделы сайта -->
-        <div class="nav_1">
-            <ul>
-                <li><a href="#1">о нас</a></li>
-                <li><a href="#2">ассортимент</a></li>
-                <li><a href="#3">отзывы</a></li>
-                <li><a href="#4">забронировать столик</a></li>
-                <li><a href="#5">наши клиенты</a></li>
-                <li><a href="/templates/contacts.html">контакты</a></li>
-            </ul>
-        </div>
-        <!-- Второй блок без кнопок с заливкой  -->
-        <div class="nav_2">
-            <!-- pass -->
-        </div>
-    </div>
-    <!-- Левое меню сайта -->
-    <div class="nav_left">
-        <div class="nav_left_1">
-            <ul class="left_list">
-                <li><a href="#1">Кофе Айриш</a></li>
-                <li><a href="#2">Кофе Американо</a></li>
-                <li><a href="#3">Кофе Глясе</a></li>
-                <li><a href="#4">Кофе Диппио</a></li>
-                <li><a href="#5">Кофе Капучино</a></li>
-                <li><a href="#6">Кофе Кон Панна</a></li>
-                <li><a href="#7">Кофе Коретто</a></li>
-                <li><a href="#8">Кофе Латте</a></li>
-                <li><a href="#9">Кофе Лунго</a></li>
-            </ul>
-        </div>
-    </div>
+{% extends 'base/base.html' %}
+{% block nameBlock %}
     <div class="article">
         <h1>Контакты</h1>
         <p>Вы можете оставить свои контакты для регистрации на сайте в качестве
@@ -59,7 +10,7 @@
                     name="userLogin"
                     placeholder="Введите логин"
                     size="18"
-                    pattern="[A-Za-z]+$]"
+                    pattern="^[A-Za-z]+$]"
                     required/>
             </p>
             <p><input
@@ -82,8 +33,4 @@
             </p>
         </form>
     </div>
-</div>
-<!-- Меняем класс для активного меню -->
-<script src="../static/js/script.js"></script>
-</body>
-</html>
+{% endblock %}

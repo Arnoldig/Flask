@@ -11,8 +11,8 @@
 		<div class="block_1">
 			<!-- Шапка сайта -->
 			<div class="container">
-				<a class="site_logo" href="/"><img src="../static/img/logo.png" alt="Кофейня"></a>
-				<img class="contacts" src="../static/img/phone.png" alt="+7 (3435) 25-60-60">
+				<a class="site_logo" href="/"><img src="{{url_for('static', filename='img/logo.png')}}" alt="Кофейня"></a>
+				<img class="contacts" src="{{url_for('static', filename='img/phone.png')}}" alt="+7 (3435) 25-60-60">
 			</div>
 			<!-- Верхнее меню сайта -->
 			<div class="top_menu">
@@ -36,15 +36,15 @@
 			<div class="nav_left">
 				<div class="nav_left_1">
 					<ul class="left_list">
-						<li><a href="#1">Кофе Айриш</a></li>
-						<li><a href="#2">Кофе Американо</a></li>
-						<li><a href="#3">Кофе Глясе</a></li>
-						<li><a href="#4">Кофе Диппио</a></li>
-						<li><a href="#5">Кофе Капучино</a></li>
-						<li><a href="#6">Кофе Кон Панна</a></li>
-						<li><a href="#7">Кофе Коретто</a></li>
-						<li><a href="#8">Кофе Латте</a></li>
-						<li><a href="#9">Кофе Лунго</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Айриш</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Американо</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Глясе</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Диппио</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Капучино</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Кон Панна</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Коретто</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Латте</a></li>
+						<li><a href="{{ url_for('index') }}">Кофе Лунго</a></li>
 					</ul>
 				</div>
 			</div>
@@ -52,6 +52,6 @@
             {% endblock %}
 		</div>
 		<!-- Меняем класс для активного меню -->
- 		<script src="../static/js/script.js"></script>
+ 		<script src="{{url_for('static', filename='js/script.js')}}"></script>
 	</body>
 </html>

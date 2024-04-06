@@ -30,12 +30,12 @@
 	.nav_1 {
 		width: 100%; 
 		height: 64px; 
-		background: #482a21 url(line_1.png) repeat-x;
+		background: #482a21 url(/static/img/line_1.png) repeat-x;
 	}
 
 	.nav_1 ul li {
 		float: left; 
-		background: url(line_2.png) no-repeat right center;
+		background: url(/static/img/line_2.png) no-repeat right center;
 		padding: 0 2px 0 0;
 	}
 
@@ -78,7 +78,7 @@
 	}
 
 	.nav_left_1 ul li {
-		background:url(points.png) no-repeat bottom left;
+		background:url(/static/img/points.png) no-repeat bottom left;
 	}
 
 	.nav_left_1 ul li a {
@@ -86,15 +86,15 @@
 		color: #fff; 
 		text-decoration: none; 
 		padding: 10px 6px 10px 40px; 
-		background: url(cup.png) no-repeat 10px 8px;
+		background: url(/static/img/cup.png) no-repeat 10px 8px;
 	}
 
 	.nav_left_1 ul li a:hover {
-		background: #ff9c00 url(cup.png) no-repeat 10px 8px;
+		background: #ff9c00 url(/static/img/cup.png) no-repeat 10px 8px;
 	}
 
 	.active {
-		background: #ff9c00 url(cup.png) no-repeat 10px 8px !important;
+		background: #ff9c00 url(/static/img/cup.png) no-repeat 10px 8px !important;
 	}
 
 	.nav_left_1 ul li:nth-last-child(1) {
