@@ -1,21 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from controller import app
 
 app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
-@app.route('/contacts')
-def contacts():
-    return render_template('contacts.html')
-
-
-# @app.route('/css/styles')
-# def styles():
-#     return render_template('styles.css')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+db = SQLAlchemy(app)
 
 if __name__ == '__main__':
     app.run()
